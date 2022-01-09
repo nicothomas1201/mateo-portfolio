@@ -5,26 +5,53 @@
   position: sticky;
   top: 0;
   backdrop-filter: blur(10px);
-  padding-inline: 9.375rem;
   z-index: 2;
+  padding-inline: 1.5rem;
 }
 
 .header-title{
-  font: var(--fontHeaderTitle);
-  font-size: 36px;
+  font-family: Maven Pro;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.6000000238418579px;
+  text-align: center;
+
+}
+
+.header-listMobile{
+  display: inline-block;
 }
 
 .header-list{
-  display: flex;
-  font: var(--fontHeaderList);
-  list-style: none;
-  gap: 1.9375rem;
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
+  display: none;
 }
 
 .header-list li a{
   color: var(--white);
   text-decoration: none;
+}
+
+@media screen and (min-width: 1168px){
+  .header{
+    padding-inline: 9.375rem;
+  }
+
+  .header-title{
+    font: var(--fontHeaderTitle);
+  }
+  
+  .header-list{
+    display: flex;
+    font: var(--fontHeaderList);
+    list-style: none;
+    gap: 1.9375rem;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+  }
+  .header-listMobile{
+    display: none;
+  }  
 }

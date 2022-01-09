@@ -7,8 +7,7 @@
 }
 
 .projectsDetails-title{
-  font: var(--headline3);
-  padding-block-start: 1.625rem;
+  font: var(--headline4);
 }
 
 .projectsDetails p{
@@ -21,4 +20,11 @@
 
 .projectsDetails p:last-of-type{
   font: var(--body1-regular);
+}
+
+@media screen and (min-width: 1187px){
+  .projectsDetails-title{
+    font: var(--headline3);
+    padding-block-start: 1.625rem;
+  }
 }

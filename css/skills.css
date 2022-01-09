@@ -1,32 +1,31 @@
 .skills{
   display: flex;
+  flex-direction: column;
   gap: 1.6875rem;
-  margin-block-start: 5rem;
+  margin-block-start: 3rem;
   padding-block-end: 5rem;
 }
 
-.skills-abilities, .skills-tools{
-  max-inline-size: 22.59375rem;
-}
+
 
 .skills-abilities h2{
-  font: var(--headline2);
+  font: var(--headline4);
   margin: 0;
   border-block-end: 4px solid var(--white);
   padding-block-end: .5rem;
-  margin-block-end: 3rem;
+  margin-block-end: 2.5rem;
 }
 
 .skills-tools h2{
-  font: var(--headline2);
+  font: var(--headline4);
   margin: 0;
   border-block-end: 4px solid var(--white);
   padding-block-end: .5rem;
-  margin-block-end: 3rem;
+  margin-block-end: 2.5rem;
 }
 
 .skills-details{
-  margin-block-end: 3rem;
+  margin-block-end: 2.5rem;
 }
 
 .skills-details:last-of-type{
@@ -41,4 +40,31 @@
 .skills-details p:last-of-type{
   font: var(--body1-regular);
   margin: 0;
+}
+
+@media screen and (min-width: 1187px){
+  .skills{
+    flex-direction: row;
+    margin-block-start: 5rem;
+  }
+
+  .skills-abilities, .skills-tools{
+    max-inline-size: 22.59375rem;
+  }
+
+  .skills-tools h2{
+    margin-block-end: 3rem;
+    font: var(--headline2);
+
+  }
+
+  .skills-abilities h2{
+    margin-block-end: 3rem;
+    font: var(--headline2);
+
+  }
+
+  .skills-details{
+    margin-block-end: 3rem;
+  }
 }

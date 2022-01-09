@@ -1,4 +1,16 @@
-.wrapper{
-  max-inline-size: 46.875rem;
-  margin: auto;
+.wrapper-mobile{
+  min-inline-size: 19.5rem;
+  margin-inline: 1.25rem;
+}
+
+@media screen and (min-width: 1168px) {
+  .wrapper{
+    max-inline-size: 46.875rem;
+    margin: auto;
+  }  
+  
+  .wrapper-mobile{
+    max-inline-size: 100%;
+    margin: none;
+  }
 }

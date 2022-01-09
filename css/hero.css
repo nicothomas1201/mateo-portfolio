@@ -1,19 +1,28 @@
 .hero{
   display: flex;
-  justify-content: center;
   align-items: center ;
-  gap: 7.5rem;
-  padding-block: 5rem;
-  padding-inline: 9.375rem;
-  z-index: 5;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-block-start: 1.5rem;
+  padding-block-end: 4rem;
 }
 
 .hero-image{
-  order: 2;
+  inline-size: 15.625rem;
+  block-size: 15.625rem;
 }
 
 .hero-image img{
   vertical-align: middle;
+  max-inline-size: 100%;
+  max-block-size: 100%;
+  /* aspect-ratio: 1/1; */
+}
+
+.hero-description{
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-description > *{
@@ -21,7 +30,7 @@
 }
 
 .hero-description h2{
-  font: 700 1.625rem/3rem Maven Pro;
+  font: var(--headline4);
   color: var(--white);
   margin-block-end: 1rem;
 }
@@ -29,4 +38,34 @@
 .hero-description p{
   font: var(--body1-regular);
   margin-block-end: 1.5rem;
+}
+
+@media screen and (min-width: 1168px){
+  .hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center ;
+    gap: 7.5rem;
+    padding-block: 5rem;
+    padding-inline: 9.375rem;
+  }
+  .hero-image{
+    order: 2;
+    block-size: 100%;
+    inline-size: 100%;
+  }
+
+  .hero-image img{
+    max-inline-size: 50rem;
+  } 
+
+  .hero-description{
+    display: block;
+  }
+
+  .hero-description h2{
+    font: 700 1.625rem/3rem Maven Pro;
+  }
+
 }

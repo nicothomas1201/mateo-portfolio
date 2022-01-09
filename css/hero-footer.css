@@ -1,14 +1,27 @@
 .heroFooter{
-  padding-block: 5rem;
+  padding-block: 4rem;
 }
 
 .heroFooter h2{
   margin: 0;
   margin-block-end: 2rem;
-  font: 700 4rem/4.75rem Maven Pro;
+  font: 700 2rem/2rem Maven Pro;
 }
 
 .heroFooter a{
   text-decoration: none;
   color: #EF4565;
+  font: 700 1.5rem/1.625rem Maven Pro;
+}
+
+@media screen and (min-width: 1168px) {
+  .heroFooter{
+    padding-block: 5rem;
+  }  
+  .heroFooter h2{
+    font: 700 4rem/4.75rem Maven Pro;
+  }
+  .heroFooter a{
+    font: 700 2rem/2rem Maven Pro;
+  }
 }
