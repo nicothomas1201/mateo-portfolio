@@ -1,0 +1,19 @@
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 9.375rem;
+}
+
+.footer p{
+  font: 500 1.125rem/1.3125rem Maven Pro;
+  margin: 0;
+}
+
+.footer-list{
+  display: flex;
+  list-style: none;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+}

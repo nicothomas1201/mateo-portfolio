@@ -1,0 +1,18 @@
+.footer-header{
+  padding-block-start: 5rem;
+  border-block-end: 4px solid var(--white);
+}
+
+.footer-header h2{
+  font: var(--headline1);
+  margin-block-end: 1rem;
+}
+
+.footer-header h3{
+  font: var(--headline2);
+  padding-block-end: .5rem;
+}
+
+.footer-header > *{
+  margin: 0;
+}

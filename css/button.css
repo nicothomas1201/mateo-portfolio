@@ -1,0 +1,44 @@
+.button{
+  padding-inline: 1.5rem;
+  color: var(--white);
+  font: var(--button);
+  border-radius: .25rem;
+  border: 2px solid transparent;
+  block-size: 3.25rem;
+  display: inline-block;
+  line-height: 3.25rem;
+}
+
+.button:active{
+  transform: scale(.9);
+}
+
+a.button{
+  text-decoration: none;
+}
+
+.button.is-primary{
+  color: var(--black);
+  background-color: var(--primary);
+}
+
+.button.is-secondary{
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.button.is-compact{
+  inline-size: 2.5rem;
+  block-size: 2.5rem;
+  aspect-ratio: 1/1;
+  color: var(--black);
+  background-color: var(--white);
+  padding: 0;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.button.is-compact i{
+  transform: translateY(-40%);
+}

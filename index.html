@@ -6,12 +6,203 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Lora:wght@400;700&family=Nunito:wght@700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/index.css">
   <title>Portafolio</title>
 </head>
 <body>
-  <h1>Portafolio</h1>
+  <header class="header">
+    <h1 class="header-title">Nicolas Quintero</h1>
+    <ul class="header-list">
+      <li>
+        <a href="#projects">Proyectos</a>
+      </li>
+      <li>
+        <a href="#experiencia">Experiencia</a>
+      </li>
+      <li>
+        <a href="#contacto">Contacto</a>
+      </li>
+    </ul>
+  </header>
+  <div class="hero">
+    <div class="hero-image">
+      <img src="./images/user.png" width="365" height="365" alt="">
+    </div>
+    <div class="hero-description">
+      <h2>
+        Hola ✋, Soy Mateo Martínez un Frontend, centrado en la creación de 
+        productos digitales durante los últimos 4 años.
+      </h2>
+      <p>
+        Me encanta centrarme en los detalles de las experiencias de nuevos productos con una  
+        implementación en código perfecta. Pero los grandes productos no comienzan ahí, comienzan 
+        con una sólida colaboración con los compañeros de equipo de investigación, ingeniería y 
+        productos para comprender los problemas y las circunstancias de los clientes.
+      </p>
+      <a href="#" download="#" class="button is-primary">Descargar curriculum</a>
+    </div>
+  </div>
+
+  <main class="main" id="projects">
+    <section class="cardProject">
+      <div class="cardProject-thumbnail">
+        <img src="./images/thumbnail-landing-project.png" height="600" width="800" alt="">  
+      </div>
+      <div class="cardProject-description">
+        <h3 class="cardProject-title">Landing Page de Pruebas Remotas</h3>
+        <p>
+          Aprende a construir una eficiente y bonita Landing Page que puedes aplicar para todo tipo de proyecto personal.
+        </p>
+        <div class="cardProject-buttons">
+          <a href="" class="button is-primary" target="blank">Ver proyecto</a>
+          <a href="https://www.youtube.com" class="button is-secondary" target="blank">Ver codigo</a>
+        </div>
+      </div>
+      <div class="cardProject-background"></div>
+    </section>
+    <section class="cardProject">
+      <div class="cardProject-thumbnail">
+        <img src="./images/thumbnail-tiendita-project.png" height="600" width="800" alt="">  
+      </div>
+      <div class="cardProject-description">
+        <h3 class="cardProject-title">Landing Page de Pruebas Remotas</h3>
+        <p>
+          Aprende a construir una eficiente y bonita Landing Page que puedes aplicar para todo tipo de proyecto personal.
+        </p>
+        <div class="cardProject-buttons">
+          <a href="" class="button is-primary" target="blank">Ver proyecto</a>
+          <a href="https://www.youtube.com" class="button is-secondary" target="blank">Ver codigo</a>
+        </div>
+      </div>
+    </section>
+    <section class="cardProject">
+      <div class="cardProject-thumbnail">
+        <img src="./images/thumbnail-slacker-project.png" height="600" width="800" alt="">  
+      </div>
+      <div class="cardProject-description">
+        <h3 class="cardProject-title">Landing Page de Pruebas Remotas</h3>
+        <p>
+          Aprende a construir una eficiente y bonita Landing Page que puedes aplicar para todo tipo de proyecto personal.
+        </p>
+        <div class="cardProject-buttons">
+          <a href="" class="button is-primary" target="blank">Ver proyecto</a>
+          <a href="https://www.youtube.com" class="button is-secondary" target="blank">Ver codigo</a>
+        </div>
+      </div>
+    </section>
+    <section class="cardProject">
+      <div class="cardProject-thumbnail">
+        <img src="./images/thumbnail-principe-fresco-project.png" height="600" width="800" alt="">  
+      </div>
+      <div class="cardProject-description">
+        <h3 class="cardProject-title">Landing Page de Pruebas Remotas</h3>
+        <p>
+          Aprende a construir una eficiente y bonita Landing Page que puedes aplicar para todo tipo de proyecto personal.
+        </p>
+        <div class="cardProject-buttons">
+          <a href="" class="button is-primary" target="blank">Ver proyecto</a>
+          <a href="https://www.youtube.com" class="button is-secondary" target="blank">Ver codigo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="footer-container">
+      <div class="wrapper">
+        <section>
+        <div id="experiencia" class="footer-header">
+          <h2>Experiencia</h2>
+          <h3>Tengo mas de 3 años de experiencia en Frontend.</h3>
+        </div>
+        <div class="projectsDetails">
+          <h2 class="projectsDetails-title">Marvol</h2>
+          <p>Frontend - 2018</p>
+          <p>
+            ¡Marvol.com es el sitio oficial de Marvol Entertainment! Explore 
+            películas, personajes, cómics, programas de televisión, videos y 
+            más oficiales de Marvel. 
+          </p>
+        </div>
+        <div class="projectsDetails">
+          <h2 class="projectsDetails-title">Niko</h2>
+          <p>Frontend - 2019</p>
+          <p>
+            Encuentra lo mejor de Niko, con productos nuevos
+            cada semana y disfruta del envío gratis. ¡Únete a nosotros!
+            y accede como miembro a productos y beneficios exclusivos. 
+          </p>
+        </div>
+        <div class="projectsDetails">
+          <h2 class="projectsDetails-title">Netnet</h2>
+          <p>Frontend - 2020</p>
+          <p>
+            Netnet es una de las plataformas de entretenimiento 
+            con más ranking a nivel mundial y detrás de las películas 
+            y series que nos ofrece, hay un diseño con el que está estructurada 
+            y organizada cada sección de la plataforma.
+          </p>
+        </div>
+        </section>
+        <section class="skills">
+        <div class="skills-abilities">
+          <h2>Habilidades principales</h2>
+          <div class="skills-details">
+            <p>Diseño de interfaz de usuario y web</p>
+            <p>Websites, web experiences.</p>
+          </div>
+          <div class="skills-details">
+            <p>Front-End Development</p>
+            <p>WHtml, CSS, JavaScript</p>
+          </div>
+        </div>
+        <div class="skills-tools">
+          <h2>Herramientas</h2>
+          <div class="skills-details">
+            <p>Diseño</p>
+            <p>Sketch, Abstract, Zeplin, Figma.</p>
+          </div>
+          <div class="skills-details">
+            <p>Programación</p>
+            <p>VSCode, Sketch, SourceTree, Slack, Evernote, Spark, Todoist, Asana, Google Drive Google Calendar.</p>
+          </div>
+        </div>
+        </section>
+        <section id="contacto" class="heroFooter">
+          <h2>
+            ¿Quieres trabajar conmigo? 
+            ¡Hazme ping!
+          </h2>
+          <a href="mailto:quinterorodirgueznicolas@gmail.com">Nicolas@gmail.com</a>
+        </section>
+      </div>
+      <footer class="footer">
+        <p>© Copyright 2021 | Mateo Martínez</p>
+        <ul class="footer-list">
+          <li>
+            <a href="#" class="button is-compact">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="button is-compact">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="button is-compact">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="button is-compact">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </footer>
+  </div>
 </body>
 </html>
 

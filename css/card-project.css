@@ -1,0 +1,82 @@
+.cardProject{
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  position: relative;
+}
+
+.cardProject-background{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(92.64deg, rgba(4, 0, 30, 0.05) 28.95%, #04001E 62.36%), linear-gradient(90.57deg, rgba(4, 0, 30, 0.05) 40.42%, #04001E 97.31%), radial-gradient(100% 674.97% at 0% 38.42%, rgba(4, 0, 30, 0) 55.49%, #04001E 100%), radial-gradient(106% 798.62% at 117.57% 58.08%, #04001E 49.6%, rgba(4, 0, 30, 0) 80.12%);
+}
+
+.cardProject:nth-of-type(2){
+  background: linear-gradient(to bottom, #F0FF00 0%, #58CFFB 100%);
+}
+
+.cardProject:nth-of-type(3){
+  background: linear-gradient(211.85deg, #FD6585 -42.56%, #0D25B9 80.81%);
+}
+
+.cardProject:nth-of-type(4){
+  background: linear-gradient(to right, #FEB692 0%, #EA5455 100%);
+}
+
+.cardProject-thumbnail img{
+  vertical-align: middle;
+  max-inline-size: 100%;
+  object-fit: cover;
+  aspect-ratio: 2/1;
+}
+
+.cardProject-title{
+  font: var(--headline2);
+  margin: 0;
+  margin-block-end: .5rem;
+}
+
+.cardProject-description{
+  position: relative;
+  z-index: 1;
+}
+
+.cardProject-description p{
+  margin: 0;
+  font: var(--body1-regular);
+  max-inline-size: 28.8125rem;
+  margin-block-end: 1rem;
+}
+
+.cardProject-buttons .is-primary{
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.cardProject-buttons .is-secondary{
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.cardProject:nth-of-type(even){
+  justify-content: flex-end;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.cardProject:nth-of-type(even) .cardProject-thumbnail{
+  order: 2;
+}
+
+.cardProject:nth-of-type(even) .cardProject-buttons .is-secondary{
+  color: currentColor;
+  border-color: currentColor;
+}
+
+.cardProject:nth-of-type(even) .cardProject-buttons .is-primary{
+  background-color: var(--black);
+  color: var(--white);
+}

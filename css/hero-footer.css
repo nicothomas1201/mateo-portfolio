@@ -1,0 +1,14 @@
+.heroFooter{
+  padding-block: 5rem;
+}
+
+.heroFooter h2{
+  margin: 0;
+  margin-block-end: 2rem;
+  font: 700 4rem/4.75rem Maven Pro;
+}
+
+.heroFooter a{
+  text-decoration: none;
+  color: #EF4565;
+}

@@ -1,0 +1,30 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  padding-inline: 9.375rem;
+  z-index: 2;
+}
+
+.header-title{
+  font: var(--fontHeaderTitle);
+  font-size: 36px;
+}
+
+.header-list{
+  display: flex;
+  font: var(--fontHeaderList);
+  list-style: none;
+  gap: 1.9375rem;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.header-list li a{
+  color: var(--white);
+  text-decoration: none;
+}

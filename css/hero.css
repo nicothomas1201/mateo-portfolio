@@ -1,0 +1,32 @@
+.hero{
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  gap: 7.5rem;
+  padding-block: 5rem;
+  padding-inline: 9.375rem;
+  z-index: 5;
+}
+
+.hero-image{
+  order: 2;
+}
+
+.hero-image img{
+  vertical-align: middle;
+}
+
+.hero-description > *{
+  margin: 0;
+}
+
+.hero-description h2{
+  font: 700 1.625rem/3rem Maven Pro;
+  color: var(--white);
+  margin-block-end: 1rem;
+}
+
+.hero-description p{
+  font: var(--body1-regular);
+  margin-block-end: 1.5rem;
+}
