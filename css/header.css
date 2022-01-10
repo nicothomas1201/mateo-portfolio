@@ -1,11 +1,9 @@
+@import './header-mobile.css';
+
 .header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
-  backdrop-filter: blur(10px);
-  z-index: 2;
   padding-inline: 1.5rem;
 }
 
@@ -17,11 +15,12 @@
   line-height: 26px;
   letter-spacing: 0.6000000238418579px;
   text-align: center;
-
+  z-index: 2;
 }
 
-.header-listMobile{
-  display: inline-block;
+.headerMobile{
+  display: block;
+  /* position: relative; */
 }
 
 .header-list{
@@ -36,6 +35,10 @@
 @media screen and (min-width: 1168px){
   .header{
     padding-inline: 9.375rem;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    z-index: 2;
   }
 
   .header-title{
@@ -51,7 +54,7 @@
     padding: 0;
     font-size: 16px;
   }
-  .header-listMobile{
+  .headerMobile{
     display: none;
   }  
 }
