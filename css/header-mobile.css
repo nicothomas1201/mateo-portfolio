@@ -6,6 +6,7 @@
   display: inline-block;
   position: relative;
   z-index: 2;
+  cursor: pointer;
 }
 
 .headerMobile-list{

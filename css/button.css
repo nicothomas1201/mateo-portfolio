@@ -10,9 +10,9 @@
   text-align: center;
 }
 
-.button:active{
+/* .button:active{
   transform: scale(.9);
-}
+} */
 
 a.button{
   text-decoration: none;
@@ -21,6 +21,12 @@ a.button{
 .button.is-primary{
   color: var(--black);
   background-color: var(--primary);
+}
+
+.button.button.is-primary:hover, 
+.button.is-secondary:hover{
+  transform: scale(1.03);
+  transition: .2s transform linear;
 }
 
 .button.is-secondary{

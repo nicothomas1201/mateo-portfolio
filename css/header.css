@@ -20,7 +20,6 @@
 
 .headerMobile{
   display: block;
-  /* position: relative; */
 }
 
 .header-list{
@@ -54,6 +53,21 @@
     padding: 0;
     font-size: 16px;
   }
+
+  .header-list li{
+    border-block-end: 3px solid transparent;
+    padding-block-end: .3rem;
+  }
+  
+  .header-list li:hover{
+    border-block-end-color: var(--white);
+    transition: .2s border linear;
+  }
+
+  .header-list li a.is-active{
+    border-color: var(--white);
+  }
+
   .headerMobile{
     display: none;
   }  

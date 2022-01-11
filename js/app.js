@@ -1,7 +1,6 @@
 const $menu = document.querySelector(".fas.fa-bars");
 const $close = document.querySelector(".fas.fa-times");
 const $headerMobileList = document.querySelector(".headerMobile-list");
-console.log($headerMobileList);
 
 $headerMobileList.style.opacity = '0';
 
@@ -16,4 +15,5 @@ $close.addEventListener('click', ()=>{
   $close.classList.toggle('none');
   $menu.classList.toggle('none');
   $headerMobileList.style.opacity = '0';
-})
+});
+
