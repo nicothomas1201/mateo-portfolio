@@ -28,6 +28,10 @@
   background: linear-gradient(to right, #FEB692 0%, #EA5455 100%);
 }
 
+.cardProject:nth-of-type(5){
+  background-color: #ff8806;
+}
+
 .cardProject-thumbnail{
   block-size: 100%;
 }
@@ -86,6 +90,7 @@
 
   .cardProject-thumbnail{
     block-size: 600px;
+    max-inline-size: 800px;
   }
   
   .cardProject-thumbnail img{
